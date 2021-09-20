@@ -1,30 +1,70 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <router-view>
+
+  </router-view>
 </template>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F6F8FF;
+}
+
+.dflex {
+  display: flex;
+}
+
+.just_center {
+  justify-content: center;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.main {
+  background: #E5E5E5;
+}
+
+.blue {
+  color: #101D94 !important;
+}
+
+.silver {
+  color: #979797;
+}
+
+.center {
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.mb30 {
+  margin-bottom: 30px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.mb20 {
+  margin-bottom: 20px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.mb6 {
+  margin-bottom: 6px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.mr30 {
+  margin-right: 30px;
 }
 </style>
